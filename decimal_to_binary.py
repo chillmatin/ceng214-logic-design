@@ -5,6 +5,7 @@
 # Date: 22-02-2022
 # Class: CENG214
 
+# Parantheses indicate looping decimals e.g: 0.0(10) means 0.01010101010101010101010101010........
 while True:
     decimal_value = input("Enter decimal value (e.g: 587.254): ")
     if '.' not in decimal_value:
