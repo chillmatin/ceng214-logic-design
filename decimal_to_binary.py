@@ -29,7 +29,7 @@ while True:
         fractional_part *= 2
         
 
-        elif fractional_part >= integer_limit:
+        if fractional_part >= integer_limit:
             stack_of_binary_digits.append(1)
             fractional_part -= integer_limit
         else:
