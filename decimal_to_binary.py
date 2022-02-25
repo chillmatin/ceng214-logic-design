@@ -27,16 +27,18 @@ while True:
     while fractional_part != 0:
         stack_of_fractional_part.append(fractional_part)
         fractional_part *= 2
-        if fractional_part in stack_of_fractional_part:
-            is_loop = True
-            loop_index = stack_of_fractional_part.index(fractional_part)
-            break
+        
 
         elif fractional_part >= integer_limit:
             stack_of_binary_digits.append(1)
             fractional_part -= integer_limit
         else:
             stack_of_binary_digits.append(0)
+            
+        if fractional_part in stack_of_fractional_part:
+            is_loop = True
+            loop_index = stack_of_fractional_part.index(fractional_part)
+            break
         # print(stack_of_fractional_part)
         # print(stack_of_binary_digits)
 
